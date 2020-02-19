@@ -1,0 +1,18 @@
+{% extends "social/base.html" %}
+    {% block content %}
+
+    {% endblock %}
+{% end block content %}
+
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+ {% for post in posts %}
+            <h1>{{ post.title }}</h1>
+            <p>Posted By {{ post.author }} on {{ post.date_posted }}</p>
+            <p>{{ post.content }}</p>
+        {% endfor %}
+</body>
+</html>
